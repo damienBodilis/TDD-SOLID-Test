@@ -1,5 +1,5 @@
 <?php
-require_once("Calculator.php");
+require_once("bootstrap.php");
 
 class CalculatorTest extends PHPUnit_Framework_TestCase
 {
@@ -12,7 +12,8 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 
     public function testSum()
     {
-        $sum = $this->calculator->sum(1, 2);
+        $sum = new Sum();
+        $sum->operation(1, 2);
         $this->assertEquals(3, $sum);
     }
 
@@ -38,6 +39,11 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
     public function testMultiply (){
         $multiply = $this->calculator->multiply(5,5);
         $this->assertEquals(25, $multiply);
+    }
+
+    public function testCalculate () {
+        $calcul = $this->calculator->calcul('4 * 4');
+        $this->assertEquals(16, $calcul);
     }
 
     public static function getDivideParameters()

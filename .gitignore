@@ -1,0 +1,11 @@
+*.swp
+files/
+v2/cache/
+v2/templates_c/
+v2/tmp/
+v2/html/
+tags
+/.idea
+/monechelle.iml
+/images
+cli/git/branch.txt

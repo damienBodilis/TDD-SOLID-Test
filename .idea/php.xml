@@ -4,6 +4,7 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings load_method="PHPUNIT_PHAR" custom_loader_path="" phpunit_phar_path="$PROJECT_DIR$/phpunit.phar" />
+      <phpunit_by_interpreter interpreter_id="44f17ebb-26a2-45d9-9424-224cdd0afbd1" load_method="PHPUNIT_PHAR" phpunit_phar_path="/vagrant/www/calculator/phpunit.phar" />
     </phpunit_settings>
   </component>
 </project>
